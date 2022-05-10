@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce product page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Large Screen Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+        <div class="links">
+            <p>Collections</p>
+            <p>Men</p>
+            <p>Women</p>
+            <p>About</p>
+            <p>Contact</p>
+            <strong id="mobile-menu-btn"><img src="img/menu.svg" alt="menu-icon"></strong>
+        </div>
+    </nav>
+    <!-- Small Screen Navigation Bar -->
+    <div class="mobile-menu">
+        <p>Collections</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>About</p>
+        <p>Contact</p>
+    </div>
+    <div class="page-container">
+        <div class="product-img">
+            <img class="hero-img" src="img/shoes.jpg" alt="product-img">
+            <ul class="other-img">
+                <li><img class="image-tag" src="img/1.jpg" alt="alternet-img"></li>
+                <li><img class="image-tag" src="img/2.jpg" alt="alternet-img"></li>
+                <li><img class="image-tag" src="img/3.jpg" alt="alternet-img"></li>
+                <li><img class="image-tag selected-img" src="img/4.jpg" alt="alternet-img"></li>
+            </ul>
+        </div>
+        <div class="product-descrpton">
+            <h5>sneaker company</h5>
+            <h1>Fall limited Edtion Sneakers</h1>
+            <p class="description">Collections Men Women About Contact Sneaker Company Fall Limited Edition Sneakers
+                These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer
+                sole, they’ll withstand everything the weather can offer. $125.00 50% $250.00 0 Add to cart
+            </p>
+            <div class="price-tag">
+                <h3>$125.00</h3>
+                <h6><span class="dscount">50%</span></h6>
+            </div>
+            <h6 class="discount-price">$215.00</h6>
+            <div class="quantity-btn">
+                <ul class="increase">
+                    <li class="btn">➖</li>
+                    <li class="btn">0</li>
+                    <li class="btn">➕</li>
+                </ul>
+                <button class="cart-btn">
+                    <img src="img/cart.png" alt="cart">
+                    <p>Add to cart</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var mobileMenuBtn = document.querySelector("#mobile-menu-btn");
+        var mobileMenu = document.querySelector(".mobile-menu");
+        mobileMenuBtn.addEventListener("click", () => {
+            if (mobileMenu.style.display === "none") {
+                mobileMenu.style.display = "flex";
+                buttons[b].style.background="url('img/menu.svg')";
+            }
+            else {
+                mobileMenu.style.display = "none";
+                buttons[b].style.background="url('img/menu.svg')";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

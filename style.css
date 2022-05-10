@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    transition: 0.5 s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: #d2ee93;
+    color: #121707;
+    height: 8vh;
+  }
+  nav .links {
+    display: flex;
+  }
+  .links p {
+    padding: 10px;
+  }
+  #mobile-menu-btn {
+    display: none;
+  }
+  .mobile-menu {
+    color: #121707;
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 60vh;
+    width: 100%;
+    background-color: #daf1a5;
+  }
+
+.page-container {
+    width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 4.2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 8rem;
+}
+
+.hero-img {
+    width: 17rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+li,
+.btn {
+    list-style: none;
+}
+
+.other-img {
+    display: flex;
+    gap: 1rem;
+}
+
+.image-tag {
+    width: 3.5rem;
+    border-radius: 10px;
+}
+
+.selected-img {
+    border: solid 2px #5a7126;
+    filter: brightness(60%);
+}
+
+h5 {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #90b53c;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.3rem;
+}
+
+.description {
+    line-height: 1.5rem;
+    color: #555;
+    margin-bottom: 0.9rem;
+}
+
+.price-tag {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    color: #313131;
+}
+
+.dscount {
+    color: #90b53c;
+    background-color: #e1f3b7;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+h6 {
+    color: #999;
+}
+
+.discount-price{
+    color: #999;
+    text-decoration: line-through;
+}
+
+.quantity-btn {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.increase {
+    display: flex;
+    gap: 2rem;
+    height: 2.6rem;
+    align-items: center;
+    background-color: rgb(228, 227, 227);
+    padding: 0.1rem 1.3rem;
+    border-radius: 5px;
+}
+
+.increase:hover {
+    box-shadow: 0px 5px 30px rgb(238, 237, 237);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.cart-btn {
+    border: none;
+    width: 15rem;
+    background-color: #b4e24b;
+    text-align: center;
+    padding: 2px 2px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.cart-btn:hover {
+    box-shadow: 0px 5px 30px #c5e973;
+    transition: all 0.4s;
+}
+
+/* media queries */
+
+@media (min-width:180px) and (max-width:600px) {
+    .page-container {
+        flex-wrap: wrap;
+        width: 100%;
+        top: 5rem;
+    }
+
+    .nev-bar-section {
+        display: none;
+    }
+
+    .product-descrpton {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .increase {
+        width: 40%;
+        gap: 1rem;
+    }
+    .discount-price{
+        float: right;
+        margin-top: -1.4rem;
+    }
+    .quantity-btn{
+        margin: 1rem 0;
+    }
+
+    /* menu-section */
+
+    /* .top-bar-section{
+        display: block;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .top-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#d6fc7f;
+        flex-direction: row;
+        padding: 7px 10px;
+        gap: 7.8rem;
+    }
+    .menu-logo{
+        display: flex;
+        gap:1rem;
+    }
+    .cart-user-section{
+        display: flex;
+        gap:1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .user-phone{
+        width: 2.2rem;
+    } */
+    
+}
+
+@media (max-width: 600px) {
+    #mobile-menu-btn {
+      display: block;
+    }
+    nav p {
+      display: none;
+    }
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1;
+    }
+    nav {
+        padding: 30px 30px;
+    }
+  }
