@@ -19,14 +19,18 @@
     <nav>
         <div class="logo">
             <img src="img/logo.svg" alt="logo">
+            <div class="links">
+                <p>Collections</p>
+                <p>Men</p>
+                <p>Women</p>
+                <p>About</p>
+                <p>Contact</p>
+                <strong id="mobile-menu-btn"><img src="img/menu.svg" alt="menu-icon"></strong>
+            </div>
         </div>
-        <div class="links">
-            <p>Collections</p>
-            <p>Men</p>
-            <p>Women</p>
-            <p>About</p>
-            <p>Contact</p>
-            <strong id="mobile-menu-btn"><img src="img/menu.svg" alt="menu-icon"></strong>
+        <div class="right">
+            <img class="cart-larg-screen" src="img/cart-2.png" alt="cart">
+            <img class="avatar-larg-screen" src="img/image-avatar.png" alt="avatar">
         </div>
     </nav>
     <!-- Small Screen Navigation Bar -->
@@ -79,11 +83,11 @@
         mobileMenuBtn.addEventListener("click", () => {
             if (mobileMenu.style.display === "none") {
                 mobileMenu.style.display = "flex";
-                buttons[b].style.background="url('img/menu.svg')";
+                buttons[b].style.background = "url('img/menu.svg')";
             }
             else {
                 mobileMenu.style.display = "none";
-                buttons[b].style.background="url('img/menu.svg')";
+                buttons[b].style.background = "url('img/menu.svg')";
             }
         });
     </script>
